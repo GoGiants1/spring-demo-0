@@ -2,10 +2,12 @@ package com.oreilly.demo.json;
 
 import java.util.Objects;
 
+//serialize and de-serialize
 public class Greeting {
     private String message;
 
-    public Greeting() {}
+    public Greeting() {
+    }
 
     public Greeting(String message) {
         this.message = message;
@@ -13,6 +15,10 @@ public class Greeting {
 
     public String getMessage() {
         return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     @Override

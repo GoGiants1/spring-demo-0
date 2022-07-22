@@ -11,8 +11,8 @@ public class HelloController {
     @GetMapping("/hello") // http://localhost:8080/hello?name=Dolly
     public String sayHello(
             @RequestParam(value = "name", required = false,
-                    defaultValue = "World") String name, Model model){
-                model.addAttribute("user", name);
-                return "hello";
+                    defaultValue = "World") String name, Model model) {
+        model.addAttribute("user", name);
+        return "hello";
     }
 }
